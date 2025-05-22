@@ -6,10 +6,6 @@ public abstract class User {
     private String contactInfo;
     private static int totalUser = 0;
 
-    private final String generateUniqueId(){
-        ++totalUser;
-        return String.valueOf(totalUser) ;
-    }
     public User(){
         this.userId = generateUniqueId();
     }
@@ -26,6 +22,15 @@ public abstract class User {
         this.name = other.name;
         this.contactInfo = other.contactInfo;
     }
+
+    private final String generateUniqueId(){
+        ++totalUser;
+        return String.valueOf(totalUser) ;
+    }
+    //Abstract methods
+    public abstract void displayDashboard();
+    public abstract boolean canBorrowBooks();
+
     public String getUserId() {
         return userId;
     }
@@ -50,7 +55,8 @@ public abstract class User {
         this.contactInfo = contactInfo;
     }
 
-    //Abstract methods
-    public abstract void displayDashboard();
-    public abstract boolean canBorrowBooks();
+    public static int getTotalUser() {
+        return totalUser;
+    }
+
 }

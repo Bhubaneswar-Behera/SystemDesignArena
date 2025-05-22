@@ -1,8 +1,8 @@
 package com.lld.library.management.system;
 
-public class Member extends User{
+public class Member extends User {
     private int borrowedBookedCount;
-    private static  int MAX_BORROW_LIMIT = 5;
+    private static final int MAX_BORROW_LIMIT = 5;
 
     public Member() {
         super();

@@ -1,6 +1,6 @@
 package com.lld.library.management.system;
 
-public abstract class Book implements Lendable{
+public abstract class Book implements Lendable {
     private String isbn;
     private String title;
     private String author;

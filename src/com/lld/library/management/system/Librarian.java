@@ -1,6 +1,6 @@
 package com.lld.library.management.system;
 
-public class Librarian extends User{
+public class Librarian extends User {
     private String employeeNumber;
 
     public Librarian(String name, String contactInfo, String employeeNumber) {
