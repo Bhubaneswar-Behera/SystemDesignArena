@@ -19,6 +19,6 @@ public static void main(String[] args) throws Exception {
     adderFuture.get();
     substracterFuture.get();
 
-    System.out.println(x);
+    System.out.println(x.getX());
     }
 }

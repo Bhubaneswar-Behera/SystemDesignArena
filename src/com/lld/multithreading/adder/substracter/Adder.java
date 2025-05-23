@@ -15,7 +15,7 @@ public class Adder implements Callable {
     }
 
     @Override
-    public Object call() throws Exception {
+    public Void call() throws Exception {
         add();
         return null;
     }

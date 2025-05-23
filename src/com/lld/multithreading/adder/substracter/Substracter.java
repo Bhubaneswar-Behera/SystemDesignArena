@@ -14,7 +14,7 @@ public class Substracter implements Callable {
     }
 
     @Override
-    public Object call() throws Exception {
+    public Void call() throws Exception {
         subtract();
         return null;
     }
