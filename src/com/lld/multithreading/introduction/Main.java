@@ -13,18 +13,20 @@ public class Main {
         //HelloWorldPrinter helloWorldPrinter = new HelloWorldPrinter();
 
         ExecutorService executorService = Executors.newFixedThreadPool(5);
-        for (int i = 0; i < 100 ; i++) {
+        for (int i = 0; i <= 100 ; i++) {
             NumberPrinter numberPrinter = new NumberPrinter(i);
             //using conventional thread to print numbers
-            /*Thread thread1 = new Thread(numberPrinter);
-            thread1.start();*/
+            //Thread thread1 = new Thread(numberPrinter);
+            //thread1.start();
 
             //using executorService to manage threads
             //executorService.execute(numberPrinter);
+            executorService.shutdown();
         }
 
         ExecutorService executorService1 = Executors.newCachedThreadPool();
-        Future<Integer> future = executorService.submit(new FibonacciNumber(10));
+        Future<Integer> future = executorService1.submit(new FibonacciNumber(10));
         System.out.println(future.get());
+        executorService1.shutdown();
     }
 }

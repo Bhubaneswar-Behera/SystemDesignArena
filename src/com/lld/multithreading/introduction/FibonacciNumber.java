@@ -12,12 +12,12 @@ public class FibonacciNumber implements Callable<Integer> {
         this.n = n;
     }
 
-   /* int fib() {
+    int fib(int n) {
         if (n <= 1) {
             return n;
         }
         return fib(n - 1) + fib(n - 2);
-    }*/
+    }
     @Override
     public Integer call() throws Exception {
         if (n <= 1) {
