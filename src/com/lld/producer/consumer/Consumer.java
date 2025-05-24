@@ -15,15 +15,17 @@ public class Consumer implements Runnable {
 
     @Override
     public void run() {
-        //while (true) {
-        try{
-            consumerSemaphore.acquire();
-            if (store.getItems().size() < 0){
-                store.removeItem();
+        while (true) {
+            try {
+                consumerSemaphore.acquire();
+                //synchronized (store) { // old way
+                if (store.getItems().size() > 0) {
+                    store.removeItem();
+                }
+                producerSemaphore.release();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
             }
-            producerSemaphore.release();
-        }catch (InterruptedException e){
-            throw new RuntimeException(e);
         }
     }
 }

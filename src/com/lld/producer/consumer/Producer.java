@@ -1,9 +1,7 @@
 package com.lld.producer.consumer;
 
 import java.util.concurrent.Semaphore;
-
-;
-
+// Producer class that implements Runnable to produce items in a store
 public class Producer implements Runnable {
     private Store store;
     Semaphore producerSemaphore;
@@ -18,10 +16,8 @@ public class Producer implements Runnable {
     @Override
     public void run() {
         while (true) {
-            //synchronized (store) {
+            //synchronized (store) { //old way
             try {
-
-
                 producerSemaphore.acquire();
                 if (store.getItems().size() < store.getMaxSize()) {
                     store.addItem(new Object());

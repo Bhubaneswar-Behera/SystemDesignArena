@@ -2,14 +2,17 @@ package com.lld.producer.consumer;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ConcurrentLinkedDeque;
+import java.util.concurrent.ConcurrentLinkedQueue;
 
 public class Store {
     private int maxSize;
-    private List<Object> items;
+    //private List<Object> items;
+    private ConcurrentLinkedQueue<Object> items;
 
     public Store(int maxSize) {
         this.maxSize = maxSize;
-        this.items = new ArrayList<>();
+        this.items = new ConcurrentLinkedQueue<>();
     }
 
     public int getMaxSize() {
@@ -20,17 +23,19 @@ public class Store {
         this.maxSize = maxSize;
     }
 
-    public List<Object> getItems() {
+    public ConcurrentLinkedQueue<Object> getItems() {
         return items;
     }
 
-    public void setItems(List<Object> items) {
+    public void setItems(ConcurrentLinkedQueue<Object> items) {
         this.items = items;
     }
 
     public void addItem(Object item){
         items.add(item);
-        System.out.println("Produce has added an item to the store : " + item);
+        if (items.size() < 10){
+            System.out.println("Produce has added an item to the store : " + item);
+        }
     }
 
     public void removeItem(){
