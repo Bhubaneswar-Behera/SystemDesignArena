@@ -21,7 +21,7 @@ public class Client {
         System.out.println("Generic First: " + genericPair.getFirst());
 
 
-        AnimalUtility.printAnimalDetails();
+        //AnimalUtility.printAnimalDetails();
     }
 
 }
