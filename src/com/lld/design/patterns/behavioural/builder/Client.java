@@ -5,10 +5,6 @@ public class Client {
         Student student = Student.getBuilder()
                 .setName("John Doe")
                 .setAge("20")
-                .setAddress("123 Main St")
-                .setBatch("A1")
-                .setGrade("A")
-                .setPhoneNumber("123-456-7890")
                 .build();
     }
 }
