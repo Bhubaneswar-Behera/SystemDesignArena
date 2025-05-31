@@ -1,4 +1,4 @@
-package com.lld.design.patterns.structural;
+package com.lld.design.patterns.structural.adapter;
 
 public interface BankAPI {
     void sendMoney(String from, String to, int amount);

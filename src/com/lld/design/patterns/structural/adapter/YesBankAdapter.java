@@ -1,4 +1,4 @@
-package com.lld.design.patterns.structural;
+package com.lld.design.patterns.structural.adapter;
 
 import com.lld.design.patterns.structural.adapter.yesbank.YesBank;
 

@@ -1,4 +1,4 @@
-package com.lld.design.patterns.structural;
+package com.lld.design.patterns.structural.adapter;
 
 public class PhonePe {
     //Ideally we should use Dependency Injection here.
