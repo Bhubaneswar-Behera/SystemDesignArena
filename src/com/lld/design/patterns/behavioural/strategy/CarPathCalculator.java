@@ -1,4 +1,4 @@
-package com.lld.design.patterns.structural.behavioural.strategy;
+package com.lld.design.patterns.behavioural.strategy;
 
 public class CarPathCalculator implements PathCalculatorStrategy {
     @Override

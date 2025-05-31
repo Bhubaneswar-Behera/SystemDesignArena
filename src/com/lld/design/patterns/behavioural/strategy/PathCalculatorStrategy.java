@@ -1,4 +1,4 @@
-package com.lld.design.patterns.structural.behavioural.strategy;
+package com.lld.design.patterns.behavioural.strategy;
 
 public interface PathCalculatorStrategy {
     void findPath(String fromLocation, String toLocation);
