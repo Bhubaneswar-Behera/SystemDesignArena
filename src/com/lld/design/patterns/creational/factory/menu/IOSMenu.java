@@ -1,4 +1,4 @@
-package com.lld.design.patterns.behavioural.factory.menu;
+package com.lld.design.patterns.creational.factory.menu;
 
 public class IOSMenu implements Menu {
     @Override

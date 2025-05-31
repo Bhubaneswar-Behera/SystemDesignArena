@@ -1,5 +1,5 @@
 /*
-package com.lld.design.patterns.behavioural.builder;
+package com.lld.design.patterns.creational.builder;
 
 public class Builder {
     private String name;

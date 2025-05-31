@@ -1,4 +1,4 @@
-package com.lld.design.patterns.behavioural.prototype;
+package com.lld.design.patterns.creational.prototype;
 
 public class Student implements Prototype<Student> {
     private String name;

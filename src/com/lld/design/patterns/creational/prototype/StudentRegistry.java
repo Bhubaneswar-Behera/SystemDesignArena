@@ -1,4 +1,4 @@
-package com.lld.design.patterns.behavioural.prototype;
+package com.lld.design.patterns.creational.prototype;
 
 import java.util.HashMap;
 import java.util.Map;

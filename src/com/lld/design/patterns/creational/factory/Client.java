@@ -1,7 +1,7 @@
-package com.lld.design.patterns.behavioural.factory;
+package com.lld.design.patterns.creational.factory;
 
-import com.lld.design.patterns.behavioural.factory.buttons.Button;
-import com.lld.design.patterns.behavioural.factory.menu.Menu;
+import com.lld.design.patterns.creational.factory.buttons.Button;
+import com.lld.design.patterns.creational.factory.menu.Menu;
 
 public class Client {
     public static void main(String[] args) {

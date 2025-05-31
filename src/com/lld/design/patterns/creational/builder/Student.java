@@ -1,4 +1,4 @@
-package com.lld.design.patterns.behavioural.builder;
+package com.lld.design.patterns.creational.builder;
 
 public class Student {
     private String name;
